@@ -1,0 +1,64 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+
+@layer base {
+    .list-primary {
+        @apply list-none text-xs font-medium mr-2;
+    };
+    .divflex {
+        @apply flex flex-row-reverse justify-between items-center w-full;
+    };
+    .rightMenu {
+        @apply flex flex-row justify-start items-center ;
+    }
+   .radiusBox {
+        @apply rounded-lg;
+   };
+   .titr {
+        @apply text-sm font-bold text-right mt-10 mb-4;
+   };
+    
+   .scrollDivs {
+     @apply flex flex-col flex-wrap items-center overflow-y-hidden overflow-x-scroll;
+     /* @apply overflow-y-hidden overflow-x-scroll */
+   }
+  
+   .featureCard {
+     @apply  w-80 rounded-xl border-[1px] border-border border-solid 
+      flex flex-col justify-between p-6 text-center bg-typeBg ml-5 h-full gap-5;
+   };
+   .featureTitr {
+     @apply text-sm font-bold;
+   };
+   .featureText {
+     @apply w-full text-sm font-normal mt-2;
+   };
+   .featureBtn {
+     @apply bg-btn text-white rounded-lg h-8 w-1/2 text-xs text-center px-4 mx-auto;
+   };
+   .typesCard {
+     @apply  bg-typeBg border border-solid border-borcolor rounded-lg flex flex-col items-center justify-between;
+   };
+   .moshCard {
+    @apply py-4 px-4  flex flex-col justify-between items-center rounded-xl;
+   };
+   #newsCard {
+    @apply   bg-typeBg border border-solid border-borcolor rounded-xl flex flex-col justify-between;
+   };
+   .newsP {
+    @apply text-xs w-full whitespace-nowrap overflow-ellipsis font-bold text-right p-3 h-1/4 overflow-hidden text-list;
+  };
+    .footerH2 {
+        @apply text-sm font-normal text-footH2;
+    };
+  .footerH3 {
+     @apply text-[10px] font-normal text-footH3 ;
+  };
+  .footLink {
+    @apply text-sm font-normal
+  }
+}

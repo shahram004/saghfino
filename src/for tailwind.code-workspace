@@ -1,0 +1,40 @@
+{
+	"folders": [
+		{
+			"path": "../../for tailwind"
+		},
+		{
+			"path": "../../Real project"
+		},
+		{
+			"path": "../../third page"
+		},
+		{
+			"path": "../../../javascript/339-fetch-method"
+		},
+		{
+			"path": "../../PY"
+		},
+		{
+			"path": "../../../javascript/352-explain-of-weather-app-project"
+		},
+		{
+			"path": "../../first Page"
+		},
+		{
+			"path": "../../secend page"
+		},
+		{
+			"path": "../../../javascript/362-explain-of-oop-todolist-project"
+		},
+		{
+			"path": "../../../javascript/364-coding-of-oop-todolist-project-2"
+		},
+		{
+			"path": ".."
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "Real project"
+	}
+}

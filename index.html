@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="src/output.css">
+    <!-- <link rel="stylesheet" href="src/input.css"> -->
+</head>
+<body class="min-w-[360px] overflow-x-hidden">
+    <div id="mobileMenu"  class=" h-[50rem]  w-full z-10 px-4 py-3 hidden">
+        <img src="images/mobile/close/close-circle.svg" alt="" id="closMenu">
+        <div id="logIn" class=" flex flex-row justify-end items-center my-12 ">
+            <img src="images/mobile/profile/profile-circle.svg" alt="">
+            <ul class="list-primary"><li > ورود یا ثبت نام </li></ul>
+        </div>
+        <div class="flex flex-col justify-between items-start h-1/3">
+            <div class="divflex">
+                <img src="images/mobile/arrow/arrow-left.svg" alt="">
+                <div class="rightMenu">
+                    <img src="images/mobile/plus/add-circle.svg" alt="">
+                    <ul class="list-primary"><li > ثبت آگهی </li></ul>
+                </div>
+            </div>
+            <div class="divflex">
+                <img src="images/mobile/arrow/arrow-left.svg" alt="">
+                <div class="rightMenu">
+                    <img src="images/mobile/house/house.svg" alt="">
+                    <ul class="list-primary"><li > اجاره خانه </li></ul>
+                </div>
+            </div>
+            <div class="divflex">
+                <img src="images/mobile/arrow/arrow-left.svg" alt="">
+                <div class="rightMenu">
+                    <img src="images/mobile/key/key.svg" alt="">
+                    <ul class="list-primary"><li > خرید خانه </li></ul>
+                </div>
+            </div>
+            <div class="divflex">
+                <img src="images/mobile/arrow/arrow-left.svg" alt="">
+                <div class="rightMenu">
+                    <img src="images/mobile/amlak/house-2.svg" alt="">
+                    <ul class="list-primary"><li > املاک و مستغلات </li></ul>
+                </div>
+            </div>
+            <div class="divflex">
+                <img src="images/mobile/arrow/arrow-left.svg" alt="">
+                <div class="rightMenu">
+                    <img src="images/mobile/people/people.svg" alt="">
+                    <ul class="list-primary"><li > مشاورین املاک </li></ul>
+                </div>
+            </div>
+            <div class="divflex">
+                <img src="images/mobile/arrow/arrow-left.svg" alt="">
+                <div class="rightMenu">
+                    <img src="images/mobile/receipt/receipt-2.svg" alt="">
+                    <ul class="list-primary"><li >  اخبار روز</li></ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="mobilenav"  class=" w-full lg:hidden">
+      <div class="flex flex-row justify-between items-center h-16 p-3 ">  
+          <img src="images/mobile/logo/menu.svg" alt="" id="openMenu">
+          <img src="images/mobile/logo/Logo.svg" alt="" class="logo">
+          <button class="w-[5rem] h-8  text-xs font-medium border-2 border-solid border-[#CB1B1B] rounded-lg text-btn"> ثبت آگهی </button>
+       </div> 
+    </div>
+    <header id="header" class="hidden lg:block container h-auto fixed top-10 right-20 z-10">
+        <div class="navigation lg:flex w-[90%] h-24  top-10 bg-white flex-row justify-between items-center rounded-2xl px-5">
+            <div class="menuLogo flex flex-row justify-between items-center gap-10">
+                <div class="LogoDiv">
+                  <img src="images/Logo.svg" alt="" class="logo">
+                </div>
+                <div class="menu  inline-flex flex-row justify-between items-center gap-6 list-none">
+                    <li class="menuitem"> اجاره        </li>
+                    <li class="menuitem"> خرید          </li>
+                    <li class="menuitem"> املاک و مستغلات </li>
+                    <li class="menuitem"> مشاورین املاک </li>
+                    <li class="menuitem"> اخبار روز     </li>
+                </div>
+            </div>   
+            <div class="links inline-flex flex-row gap-9 items-center">
+                <p class="logIn">             ورود </p>
+                <button class="lg:  py-2 px-4 text-sm font-medium border-2 border-solid border-[#CB1B1B] rounded-lg text-btn"> ثبت آگهی </button>
+            </div>
+        </div>
+    </header>
+    <section class="relative mt-0 h-auto w-full flex flex-col justify-around">
+        <picture class=" h-full">
+            <source srcset="images/HomeNewUser/Cover Photo.svg" media="max-width:600px">
+            <img src="images/Photo.jpg" alt="" class="headerBackground w-full">
+        </picture>
+            <div class="flex flex-col justify-between items-center w-3/5 text-center absolute top-5 left-24 lg:top-[320px] lg:left-72">
+                <h1 class="title text-base font-bold text-title lg:text-[54px]">سقفینو؛ سقفی برای همه</h1>
+                <h2 class="title text-xs font-bold text-title lg:text-[32px] lg:mt-10"> آسانی و سرعت در پیدا کردن یک سقف تازه را در سقفینو تجربه کنید </h2>
+            </div>
+            <div class="searchBox mt-5 w-[90%] h-[62px] bg-[#ffffff] rounded-xl  absolute top-20 left-5 lg:top-[500px] lg:left-96 lg:w-[50%] lg:h-[108px]">
+               <div class=" flex flex-row h-1/2 justify-between items-center px-16 py-1 lg:py-2 lg:px-24">
+                 <h3 class="text-sm font-normal lg:text-2xl lg:font-medium">  خرید </h3>
+                 <h3 class="text-sm font-normal lg:text-2xl lg:font-medium"> اجاره </h3>
+                </div>
+                 <hr class="w-[90%] mx-auto">
+               <div class="search px-4 h-1/2 flex flex-row justify-end lg:px-10">
+                   <img src="images/search-normal.svg" alt="" class="w-4 lg:w-6 ">
+                   <input type="search" placeholder="شهر مورد نظر را جست‌وجو کنید" class="text-xs font-normal mr-2 w-full lg:text-sm lg:font-medium">
+               </div>
+            </div>  
+    </section>
+    <main class="lg:w-[90%] mx-auto mt-10 ">
+        <div class="flex flex-row justify-center">
+            <div class="p-5">
+                <h3 class="titr lg:text-2xl lg:font-bold"> سقفینو چطور به خانه‌دار شدن شما کمک می‌کند </h3>
+                <div class="scrollDivs h-[350px] lg:h-[511px] lg:flex-row lg:gap-6 lg:overflow-hidden ">
+                    <div class="featureCard lg:gap-6 lg:p-8 lg:w-96">
+                        <img class=" w-3/5 mx-auto lg:w-auto" src="images/features/illustration (2).svg" alt="">
+                        <div class="lg:h-[202px]">
+                            <h3 class="featureTitr lg:text-[20px]"> به آسانی یک خانه اجاره کنید </h3>
+                            <p class="featureText lg:text-base "> در میان صدها آگهی که روزانه به وب‌سایت سقفینو افزوده می‌شود، با استفاده از بیش از ۲۸ فیلتر کاربردی تلاش کرده‌ایم خانه‌ای که در جست‌وجوی آن هستید را هر چه سریعتر پیدا و اجاره کنید. </p>
+                        </div>
+                        <button class="featureBtn lg:w-[90%] lg:text-base"> اجاره خانه </button>
+                    </div>
+        
+                    <div class="featureCard lg:gap-6 lg:p-8 lg:w-96">
+                        <img class="w-3/5 mx-auto lg:w-auto" src="images/features/Illustration (1).svg" alt="">
+                        <div class=" lg:h-[202px]">
+                            <h3 class="featureTitr lg:text-[20px]"> مالک هستید؟ </h3>
+                            <p class="featureText lg:text-base"> بالای ۱ میلیون آگهی فروش در وب‌سایت سقفینو وجود دارد. ما علاوه بر آگهی‌های فراوان با به‌کارگیری املاک و مشاورین متخصص در هر شهر، تلاش می‌کنیم در تجربه لذت یک خرید آسان با شما سهیم باشد. </p>
+                        </div>
+        
+                        <button class="featureBtn lg:w-[90%] lg:text-base"> خرید خانه </button>
+                    </div>
+                    <div class="featureCard lg:gap-6 lg:p-8 lg:w-96">
+                        <img class="w-auto mx-auto lg:w-auto" src="images/features/illustration.svg" alt="">
+                        <div class=" lg:h-[202px]">
+                            <h3 class="featureTitr lg:text-[20px]"> خانه مورد علاقه‌تان را بخرید </h3>
+                            <p class="featureText lg:text-base"> آیا می‌دانید میانگین بازدید از وب‌سایت به‌طور متوسط روزانه بالای هزاران نفر است؟ پس به‌سادگی و با چند کلیک ساده، ملک‌تان را به‌صورت رایگان در سقفینو آگهی و در سریع‌ترین زمان ممکن معامله کنید. </p>
+                        </div>
+                        <button class="featureBtn lg:w-[90%] lg:text-base"> ثبت آگهی </button>
+        
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="flex flex-row justify-start lg:justify-center mx-auto">
+            <div class=" lg:w-[90%] flex flex-col items-start p-5">
+                <h3 class="titr lg:text-2xl lg:font-bold"> در سقفینو دنبال چه نوع ملکی هستید </h3>
+                <div class=" h-50  grid grid-cols-[repeat(4,46%)] gap-5 overflow-y-hidden overflow-x-scroll lg:overflow-hidden lg:flex flex-row justify-between lg:w-full">
+                    <div class="typesCard max-w-[288px]">
+                        <img src="images/types/Rectangle 52 (3).svg " alt="" class="rounded-t-lg max-h-36 lg:w-full">
+                        <img src="images/types/icon1.svg" alt="" class="hidden lg:block"">
+                        <div class=" text-center p-3">
+                            <h3 class="text-base font-bold"> ۲۸.۹۰۰ </h3>
+                            <p class="text-sm font-normal"> خانه مسکونی </p> 
+                        </div>   
+                    </div>
+                    <div class="typesCard max-w-[288px]">
+                    <img src="images/types/Rectangle 52 (2).svg" alt="" class="rounded-t-lg max-h-36 lg:w-full">
+                        <img src="images/types/icon.svg" alt class="hidden lg:block"></img>
+                        <div class=" text-center p-3">
+                            <h3 class="text-base font-bold"> ۳۰۹.۷۹۸ </h3>
+                            <p class="text-sm font-normal"> آپارتمان و برج </p>
+                        </div>
+                    
+                    </div>
+                    <div class="typesCard max-w-[288px]">
+                    <img src="images/types/Rectangle 52 (1).svg" alt="" class=" rounded-t-lg max-h-36 lg:w-full">
+                    <img src="images/types/icon (1).svg" alt="" class="hidden lg:block"">
+                    <div class=" text-center p-3">
+                        <h3 class="text-base font-bold"> ۹۴۶ </h3>
+                        <p class="text-sm font-normal"> ویلا </p> 
+                    </div>
+                    
+                    </div>
+                    <div class="typesCard max-w-[288px]">
+                    <img src="images/types/Rectangle 52.svg" alt="" class="rounded-t-lg max-h-36 lg:w-full">
+                    <img src="images/types/house-2.svg" alt="" class="hidden lg:block"">
+                     <div class=" text-center p-3">
+                         <h3 class="text-base font-bold">۲۷.۳۳۹ </h3>
+                         <p class="text-sm font-normal"> تجاری و اداری </p>  
+                     </div>
+                    
+                    </div>
+                </div>
+            </div>
+        </div>
+    <div class=" flex flex-row justify-center mt-10">
+        <div class=" lg:w-3/5">
+            <div class="titrmoshaverh text-center mt-12">
+                <h3 class="text-sm font-bold lg:text-3xl lg:font-medium"> همه به شما مشاوره می‌دهند! </h3>
+                <h3 class="text-xs font-normal lg:text-2xl lg:font-normal"> اما در سقفینو مشاوران املاک کِنار شما می‌مانند </h3>
+            </div>
+    
+            <div class="grid grid-cols-[repeat(3,46%)] gap-5 overflow-y-hidden overflow-x-scroll mb-[100px] mt-5 p-1 lg:flex flex-row justify-between lg:gap-32 lg:overflow-hidden">
+                <div class="moshCard lg:h-60 lg:w-44 ">
+                    <img src="images/moshavereh/Character.svg" alt="" class=" w-full h-1/2 ">
+                    <p class="text-sm font-normal text-center w-full lg:text-lg"> امکان خرید و اجاره ملک در اکثر نقاط کشور </p>
+                </div>
+                <div class="moshCard lg:h-60 lg:w-44">
+                    <img src="images/moshavereh/Work time-pana 2.svg" alt="" class="w-full h-1/2 ">
+                    <p class="text-sm font-normal text-center w-full lg:text-lg"> مقایسه و بررسی صدها ملک براحتی و در کمترین زمان </p>
+                </div>
+                <div class="moshCard lg:h-60 lg:w-44  ">
+                    <img src="images/moshavereh/Photo.svg" alt="" class="w-full h-1/2 ">
+                    <p class="text-sm font-normal text-center w-full lg:text-lg"> ارتباط آسان با برترین املاک و مشاورین کشور </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+     <div class="w-[90%] mx-auto">
+         <h3 class="titr lg:text-3xl lg:font-bold"> آخرین اخبارِ املاک را از سقفینو دنبال کنید </h3>
+         <div class="grid grid-cols-[repeat(4,80%)] grid-rows-1 gap-5 mt-2 mb-10 overflow-y-hidden overflow-x-scroll lg:h-[358px] lg:overflow-hidden lg:grid-cols-[repeat(4,25%)] lg:gap-0">
+             <div id="newsCard" class="lg:w-64">
+                 <!-- <img src="images/mobile/Rectangle 52 (1).svg" alt="" class="max-h-36 "> -->
+                 <img src="images/mobile/Rectangle 52.png" alt="" class=" h-3/5 w-full rounded-t-xl ">
+                 <p class="newsP lg:text-lg"> رکود بازار مسکن؛<br>فروشندگان در انتظار خریداران و خریداران در انتظار شکست نرخ فروشندگان </p>
+             </div>
+             <div id="newsCard" class="lg:w-64">
+                 <img src="images/mobile/Rectangle 52 (1).png" alt="" class=" h-3/5 w-full rounded-t-xl">
+                 <p class="newsP lg:text-lg"> خطر ویرانی زلزله در<br> آسمان‌خراش‌ها بیشتر است یا در آپارتمان‌های کم‌ارتفاع و یا خانه‌های</p>
+             </div>
+             <div id="newsCard" class="lg:w-64">
+                 <img src="images/mobile/Rectangle 52 (2).png" alt="" class=" h-3/5 w-full rounded-t-xl">
+                 <p class="newsP lg:text-lg"> بازار کساد کسب و کار معماران<br> داخلی در پی بالا رفتن قیمت مواد و متریال اولیه و مصالح خارجی </p>
+             </div>
+             <div id="newsCard" class="lg:w-64">
+                 <img src="images/mobile/Rectangle 52 (3).png" alt="" class=" h-3/5 w-full rounded-t-xl">
+                 <p class="newsP lg:text-lg"> شهرک ساحلی زمزم در منطقه<br> نور استان مازندران از سوم شهریور وارد بازار مزایده شده است.  </p>
+             </div>
+         </div>
+     </div>
+
+    </main>
+
+    <footer class="bg-typeBg w-full mt-20 lg:hidden">
+        <div class="mt-10 p-5">
+            <img src="images/mobile/footer/Logo.svg" alt="">
+            <div class="mt-4">
+                <h3 class="text-base font-medium"> سقفینو؛ سقفی برای یک زندگی ایده‌آل </h3>
+                <h3 class="text-xs font-normal">  تجربه لذت خانه‌دار شدن آنی و آسان </h3>
+            </div>
+
+            <div class="flex flex-row justify-between mt-4 w-3/4">
+                <h3 class="text-[10px] font-normal"> بیشترین جست‌وجوها </h3>
+                <h3 class="text-[10px] font-normal"> بازارهای املاک و مستغلات </h3>
+            </div>
+            <p class="mt-4 text-[10px] font-normal text-footH3"> سقفینو پلی است
+                 تا به سرعت در بین هزاران آگهی ثبت‌شده جست‌وجو کنید. 
+                 ملک مورد نظر را پیدا کنید و
+                 برای انجام معامله‌ای مطمئن، با مشاورین املاک معتمد و متخصص شهرتان در ارتباط باشید.
+             </p>
+
+             <div class=" inline-flex flex-row  gap-6 mt-4">
+                 <div class="flex flex-col gap-1">
+                     <h2 class="footerH2"> خدمات </h2>
+                     <h3 class="footerH3"> اجاره </h3>
+                     <h3 class="footerH3"> خرید </h3>
+                     <h3 class="footerH3"> ثبت آگهی ملک </h3>
+                     <h3 class="footerH3"> املاک </h3>
+                     <h3 class="footerH3"> مشاورین املاک </h3>
+                     <h3 class="footerH3"> اخبار روز املاک </h3>
+                     <h3 class="footerH3"> سوالات ملکی </h3>
+                </div>
+
+                <div class=" flex flex-col  gap-1">
+                    <h2 class="footerH2 "> ارتباط با ما </h2>
+                        <div class=" flex flex-row items-center gap-1">
+                            <img src="images/mobile/footer/call.svg" alt="">
+                            <h3 class="footerH3"> تلفن </h3>
+                        </div>
+                        <div class=" flex flex-row items-center gap-1">
+                            <img src="images/mobile/footer/instagram.svg" alt="">
+                            <h3 class="footerH3"> اینستاگرام </h3>
+                        </div>
+                        <div class=" flex flex-row items-center gap-1">
+                            <img src="images/mobile/footer/_Facebook.svg" alt="">
+                            <h3 class="footerH3"> تلگرام </h3>
+                        </div>
+                    
+                </div>
+
+                <div class=" flex flex-col gap-1">
+                    <h2 class="footerH2"> اطلاعات                  </h2>
+                    <h3 class="footerH3"> دانلود اپلیکشن سقفینو  </h3>
+                    <h3 class="footerH3"> تماس با ما              </h3>
+                    <h3 class="footerH3"> داستان ‌سقفینو           </h3>
+                    <h3 class="footerH3"> پرسش‌های پرتکرار         </h3>
+                    <h3 class="footerH3"> یک سقف؛ بلاگ سقفینو      </h3>
+                    <h3 class="footerH3"> حریم شخصی شما           </h3>
+                    <h3 class="footerH3"> تعهدات ما و شما         </h3>
+                </div>
+             </div>
+             <div class="flex justify-end pl-10 mt-4">
+                 <img src="images/mobile/footer/enemad.svg" alt="">
+             </div>
+             
+             
+             
+            </div>
+            <div class="flex flex-row justify-around items-end ">
+               <img src="images/mobile/footer/illustarion 2 1.svg" alt="">
+            </div>
+    </footer>
+    <footer id="lapFooter" class="mt-32 hidden lg:block">
+        <div class="mx-auto w-4/5">
+            <div class="text-center">
+                <h2 class="text-3xl font-bold"> سقفینو؛ سقفی ایده‌آل برای زندگی </h2>
+            </div>
+            <div class="flex flex-row justify-around gap-8 my-10 border-b-2 border-borcolor  mx-auto pb-4">
+                <div class="flex flex-col gap-1.5 ">
+                    <h4 class="footLink"> بازارهای املاک و مستغلات </h4>
+                    <a href="" class="text-xs text-footH3">بازار املاک و مستغلات تهران</a>
+                    <a href="" class="text-xs text-footH3">بازار املاک و مستغلات اصفهان</a>
+                    <a href="" class="text-xs text-footH3">بازار املاک و مستغلات شمال</a>
+                    <div>
+                        <a href=""></a>
+                        <img src="" alt="">
+                    </div>
+                </div>
+                <div class="flex flex-col gap-1.5 ">
+                    <h4 class="footLink"> بیشترین جست‌وجوها </h4>
+                    <a href="" class="text-xs text-footH3"> آپارتمان نزدیک مترو </a>
+                    <a href="" class="text-xs text-footH3"> خانه نزدیک بر اصلی خیابان </a>
+                    <a href="" class="text-xs text-footH3"> آپارتمان تک واحده </a>
+                    <a href=""></a>
+                </div>
+                <div class="flex flex-col gap-1.5 ">
+                    <h4 class="footLink"> پرامتیازترین مشاوران املاک </h4>
+                    <a href="" class="text-xs text-footH3"> میترا جباری </a>
+                    <a href="" class="text-xs text-footH3"> حسام‌الدین عزیزی </a>
+                    <a href="" class="text-xs text-footH3"> بهرام مشعوف </a>
+                    <a href="" class="text-xs text-footH3"></a>
+                </div>
+                <div class="flex flex-col">
+                    <h4 class="footLink"> با ما در ارتباط باشید </h4>
+                        <div class=" flex flex-row items-center gap-1  mt-1">
+                            <img src="images/mobile/footer/call.svg" alt="">
+                            <a class="text-xs text-footH3"> تلفن </a>
+                        </div>
+                        <div class=" flex flex-row items-center gap-1  mt-1">
+                            <img src="images/mobile/footer/instagram.svg" alt="">
+                            <a class="text-xs text-footH3"> اینستاگرام </a>
+                        </div>
+                        <div class=" flex flex-row items-center gap-1 mt-1">
+                            <img src="images/mobile/footer/_Facebook.svg" alt="">
+                            <a class="text-xs text-footH3"> تلگرام </a>
+                        </div>
+                </div>
+
+            </div>
+            <div class="grid grid-cols-4 grid-rows-1  mx-auto">
+                <div class=" flex flex-col items-start gap-4 pr-16">
+                    <img src="images/Footer/Logo.svg" alt="" class="">
+                    <h4 class="footLink"> تجربه لذت خانه‌دار شدن سریع و آسان </h4>
+                    <p class="text-xs text-footH3">سقفینو پلی است تا به سرعت در بین هزاران آگهی ثبت‌شده جست‌وجو کنید.<br> 
+                        ملک مورد نظر را پیدا کنید و برای انجام معامله‌ای مطمئن، با مشاورین املاک معتمد و متخصص شهرتان در ارتباط باشید. 
+                    </p>
+                </div>
+                <div class=" flex flex-col items-start gap-1.5 pr-24">
+                     <h4 class="footLink"> خدمات </h4>
+                     <a class="text-xs text-footH3"> اجاره </a>
+                     <a class="text-xs text-footH3"> خرید </a>
+                     <a class="text-xs text-footH3"> ثبت رایگان آگهی ملک </a>
+                     <a class="text-xs text-footH3">  املاک و مستغلات </a>
+                     <a class="text-xs text-footH3"> مشاورین املاک </a>
+                     <a class="text-xs text-footH3"> اخبار روز املاک </a>
+                     <a class="text-xs text-footH3"> سوالات ملکی  دارید؟</a>
+                </div>
+                <div class=" flex flex-col items-start gap-1.5 pr-24">
+                    <h4 class="footLink"> اطلاعات                  </h4>
+                    <a class="text-xs text-footH3"> دانلود اپلیکشن سقفینو  </a>
+                    <a class="text-xs text-footH3"> تماس با ما              </a>
+                    <a class="text-xs text-footH3"> داستان ‌سقفینو           </a>
+                    <a class="text-xs text-footH3"> پرسش‌های پرتکرار         </a>
+                    <a class="text-xs text-footH3"> یک سقف؛ بلاگ سقفینو      </a>
+                    <a class="text-xs text-footH3"> حریم شخصی شما           </a>
+                    <a class="text-xs text-footH3"> تعهدات ما و شما         </a>
+                </div>
+                <div class=" flex flex-col justify-between pr-32">
+                    <div class=" flex flex-col gap-1.5">
+                        <h4 class="footLink"> حساب کاربری    </h4>
+                        <a class="text-xs text-footH3"> پروفایل من </a>
+                        <a class="text-xs text-footH3"> ملک‌های نشان‌شده             </a>
+                        <a class="text-xs text-footH3"> آگهی‌های من          </a>
+                    </div>
+                    <div>
+                        <img src="images/mobile/footer/enemad.svg" alt="" class="h-12">
+                    </div>
+                </div>
+            </div>
+            <div class="flex justify-center mt-20">
+                <img src="images/Footer/illustarion 2 1.svg" alt="">
+            </div>
+            
+        </div>
+        <div class="bg-title flex justify-center items-center h-5 py-4">
+            <h3 class="text-xs text-footH3"> حقوق این سایت متعلق به سقفینو است </h3>
+        </div>
+
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
