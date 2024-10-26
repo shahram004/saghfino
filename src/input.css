@@ -10,7 +10,7 @@
         @apply list-none text-xs font-medium mr-2;
     };
     .divflex {
-        @apply flex flex-row-reverse justify-between items-center w-full;
+        @apply flex flex-row justify-between items-center w-full;
     };
     .rightMenu {
         @apply flex flex-row justify-start items-center ;

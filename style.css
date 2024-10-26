@@ -27,6 +27,9 @@ input[ type = search]{
 .moshCard {
     box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.08),0px 1px 2px 0px rgba(0, 0, 0, 0.05)
 }
+#mobileMenu {
+    direction: ltr;
+}
 
 
 

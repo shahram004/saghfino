@@ -10,52 +10,52 @@
 </head>
 <body class="min-w-[360px] overflow-x-hidden">
     <div id="mobileMenu"  class=" h-[50rem]  w-full z-10 px-4 py-3 hidden">
-        <img src="images/mobile/close/close-circle.svg" alt="" id="closMenu">
+        <img class="" src="images/mobile/close/close-circle.svg" alt="" id="closMenu">
         <div id="logIn" class=" flex flex-row justify-end items-center my-12 ">
-            <img src="images/mobile/profile/profile-circle.svg" alt="">
             <ul class="list-primary"><li > ورود یا ثبت نام </li></ul>
+            <img src="images/mobile/profile/profile-circle.svg" alt="">
         </div>
-        <div class="flex flex-col justify-between items-start h-1/3">
+        <div class="flex flex-col justify-between items-end h-1/3">
             <div class="divflex">
                 <img src="images/mobile/arrow/arrow-left.svg" alt="">
                 <div class="rightMenu">
-                    <img src="images/mobile/plus/add-circle.svg" alt="">
                     <ul class="list-primary"><li > ثبت آگهی </li></ul>
+                    <img src="images/mobile/plus/add-circle.svg" alt="">
                 </div>
             </div>
             <div class="divflex">
                 <img src="images/mobile/arrow/arrow-left.svg" alt="">
                 <div class="rightMenu">
-                    <img src="images/mobile/house/house.svg" alt="">
                     <ul class="list-primary"><li > اجاره خانه </li></ul>
+                    <img src="images/mobile/house/house.svg" alt="">
                 </div>
             </div>
             <div class="divflex">
                 <img src="images/mobile/arrow/arrow-left.svg" alt="">
                 <div class="rightMenu">
-                    <img src="images/mobile/key/key.svg" alt="">
                     <ul class="list-primary"><li > خرید خانه </li></ul>
+                    <img src="images/mobile/key/key.svg" alt="">
                 </div>
             </div>
             <div class="divflex">
                 <img src="images/mobile/arrow/arrow-left.svg" alt="">
                 <div class="rightMenu">
-                    <img src="images/mobile/amlak/house-2.svg" alt="">
                     <ul class="list-primary"><li > املاک و مستغلات </li></ul>
+                    <img src="images/mobile/amlak/house-2.svg" alt="">
                 </div>
             </div>
             <div class="divflex">
                 <img src="images/mobile/arrow/arrow-left.svg" alt="">
                 <div class="rightMenu">
-                    <img src="images/mobile/people/people.svg" alt="">
                     <ul class="list-primary"><li > مشاورین املاک </li></ul>
+                    <img src="images/mobile/people/people.svg" alt="">
                 </div>
             </div>
             <div class="divflex">
                 <img src="images/mobile/arrow/arrow-left.svg" alt="">
                 <div class="rightMenu">
-                    <img src="images/mobile/receipt/receipt-2.svg" alt="">
                     <ul class="list-primary"><li >  اخبار روز</li></ul>
+                    <img src="images/mobile/receipt/receipt-2.svg" alt="">
                 </div>
             </div>
         </div>
@@ -67,7 +67,7 @@
           <button class="w-[5rem] h-8  text-xs font-medium border-2 border-solid border-[#CB1B1B] rounded-lg text-btn"> ثبت آگهی </button>
        </div> 
     </div>
-    <header id="header" class="hidden lg:block container h-auto fixed top-10 right-20 z-10">
+    <header id="header" class="hidden lg:block container h-auto absolute top-10 right-20 z-10">
         <div class="navigation lg:flex w-[90%] h-24  top-10 bg-white flex-row justify-between items-center rounded-2xl px-5">
             <div class="menuLogo flex flex-row justify-between items-center gap-10">
                 <div class="LogoDiv">
@@ -109,10 +109,10 @@
             </div>  
     </section>
     <main class="lg:w-[90%] mx-auto mt-10 ">
-        <div class="flex flex-row justify-center">
+        <div class="flex flex-row justify-center mr-3">
             <div class="p-5">
                 <h3 class="titr lg:text-2xl lg:font-bold"> سقفینو چطور به خانه‌دار شدن شما کمک می‌کند </h3>
-                <div class="scrollDivs h-[350px] lg:h-[511px] lg:flex-row lg:gap-6 lg:overflow-hidden ">
+                <div class="scrollDivs h-[350px] lg:h-[511px] lg:flex-row lg:gap-6 lg:overflow-hidden lg:mt-5 ">
                     <div class="featureCard lg:gap-6 lg:p-8 lg:w-96">
                         <img class=" w-3/5 mx-auto lg:w-auto" src="images/features/illustration (2).svg" alt="">
                         <div class="lg:h-[202px]">
@@ -144,10 +144,10 @@
             </div>
         </div>
 
-        <div class="flex flex-row justify-start lg:justify-center mx-auto">
+        <div class="flex flex-row justify-start lg:justify-center mx-auto ">
             <div class=" lg:w-[90%] flex flex-col items-start p-5">
                 <h3 class="titr lg:text-2xl lg:font-bold"> در سقفینو دنبال چه نوع ملکی هستید </h3>
-                <div class=" h-50  grid grid-cols-[repeat(4,46%)] gap-5 overflow-y-hidden overflow-x-scroll lg:overflow-hidden lg:flex flex-row justify-between lg:w-full">
+                <div class=" h-50  grid grid-cols-[repeat(4,46%)] gap-5 overflow-y-hidden overflow-x-scroll lg:overflow-hidden lg:flex flex-row justify-between lg:w-full lg:mt-7">
                     <div class="typesCard max-w-[288px]">
                         <img src="images/types/Rectangle 52 (3).svg " alt="" class="rounded-t-lg max-h-36 lg:w-full">
                         <img src="images/types/icon1.svg" alt="" class="hidden lg:block"">
@@ -193,7 +193,7 @@
                 <h3 class="text-xs font-normal lg:text-2xl lg:font-normal"> اما در سقفینو مشاوران املاک کِنار شما می‌مانند </h3>
             </div>
     
-            <div class="grid grid-cols-[repeat(3,46%)] gap-5 overflow-y-hidden overflow-x-scroll mb-[100px] mt-5 p-1 lg:flex flex-row justify-between lg:gap-32 lg:overflow-hidden">
+            <div class="grid grid-cols-[repeat(3,46%)] gap-5 overflow-y-hidden overflow-x-scroll mb-[100px] mt-5 p-1 lg:flex flex-row justify-between lg:gap-32 lg:overflow-hidden lg:mt-8">
                 <div class="moshCard lg:h-60 lg:w-44 ">
                     <img src="images/moshavereh/Character.svg" alt="" class=" w-full h-1/2 ">
                     <p class="text-sm font-normal text-center w-full lg:text-lg"> امکان خرید و اجاره ملک در اکثر نقاط کشور </p>
@@ -211,8 +211,8 @@
     </div>
 
      <div class="w-[90%] mx-auto">
-         <h3 class="titr lg:text-3xl lg:font-bold"> آخرین اخبارِ املاک را از سقفینو دنبال کنید </h3>
-         <div class="grid grid-cols-[repeat(4,80%)] grid-rows-1 gap-5 mt-2 mb-10 overflow-y-hidden overflow-x-scroll lg:h-[358px] lg:overflow-hidden lg:grid-cols-[repeat(4,25%)] lg:gap-0">
+         <h3 class="titr lg:text-2xl lg:font-bold"> آخرین اخبارِ املاک را از سقفینو دنبال کنید </h3>
+         <div class="grid grid-cols-[repeat(4,80%)] grid-rows-1 gap-5 mt-2  mb-10 overflow-y-hidden overflow-x-scroll lg:h-[358px] lg:overflow-hidden lg:grid-cols-[repeat(4,25%)] lg:gap-0 lg:mt-6">
              <div id="newsCard" class="lg:w-64">
                  <!-- <img src="images/mobile/Rectangle 52 (1).svg" alt="" class="max-h-36 "> -->
                  <img src="images/mobile/Rectangle 52.png" alt="" class=" h-3/5 w-full rounded-t-xl ">
